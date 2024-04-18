@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/health_details_swiper.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/health_details.css" />
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/h1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Be part of Our Health Programs.</span>
+            <h2>
+              Wellness Journey Starts<br />
+              with Small Steps
+            </h2>
+            <a href="hrf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/h2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Nurture wellness prioritize health every day.</span>
+            <h2>
+              Live Well Prioritize Health   <br />
+              Programs Daily
+            </h2>
+            <a href="hrf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/h3.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Healthy habits lead to a vibrant life.</span>
+            <h2>
+              Transform your Life Choose  <br />
+              Health First
+            </h2>
+            <a href="hrf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/health_details_swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

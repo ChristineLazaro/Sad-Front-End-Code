@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="comRF.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Community Registration Form</header>
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" placeholder="Enter phone number" required />
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" placeholder="Enter street address" required />
+          <input type="text" placeholder="Enter street address line 2" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>America</option>
+                <option>Japan</option>
+                <option>India</option>
+                <option>Nepal</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Enter your city" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Enter your region" required />
+            <input type="number" placeholder="Enter postal code" required />
+          </div>
+        </div>
+
+        <!-- New section for Interest for Participation -->
+        <div class="input-box interest-box">
+            <label>Interest for Participation</label>
+            <textarea placeholder="Enter your reasons" required></textarea>
+          </div>
+          
+
+        <!-- New section for Availability -->
+        <div class="availability-box">
+          <h3>Availability</h3>
+          <div class="availability-option">
+            <div class="availability">
+              <input type="radio" id="saturday-morning" name="availability" value="Saturday Morning" required />
+              <label for="saturday-morning">Saturday Morning (7:00 AM - 10:00 PM)</label>
+            </div>
+            <div class="availability">
+              <input type="radio" id="saturday-afternoon" name="availability" value="Saturday Afternoon" required />
+              <label for="saturday-afternoon">Saturday Afternoon (1:00 PM - 4:00 PM)</label>
+            </div>
+            <div class="availability">
+              <input type="radio" id="sunday-morning" name="availability" value="Sunday Morning" required />
+              <label for="sunday-morning">Sunday Morning (7:00 AM - 10:00 PM)</label>
+            </div>
+            <div class="availability">
+              <input type="radio" id="sunday-afternoon" name="availability" value="Sunday Afternoon" required />
+              <label for="sunday-afternoon">Sunday Afternoon (1:00 PM - 4:00 PM)</label>
+            </div>
+          </div>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

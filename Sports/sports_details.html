@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/sport_details_swiper.css" />
+  
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/sport_details.css" />
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/s1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Be part of Our Sports Programs.</span>
+            <h2>
+              Develop skills with comprehensive <br />
+              Sports Programs
+            </h2>
+            <a href="srf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/s2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Join us for next-level sports success.</span>
+            <h2>
+              Master Your Sport with   <br />
+              our Guidance 
+            </h2>
+            <a href="srf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/s3.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Push limits and excel with us.</span>
+            <h2>
+              Relieve Stress and Enhance   <br />
+              Overall Well-being
+            </h2>
+            <a href="srf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/sport_details_swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

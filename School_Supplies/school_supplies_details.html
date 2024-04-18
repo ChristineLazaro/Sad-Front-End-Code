@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/school_supplies_details_swiper.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/school_supplies_details.css" />
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/sp1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Be part of Our School Supplies Programs.</span>
+            <h2>
+              Nurture Learning through <br />
+              Accessible Resources
+            </h2>
+            <a href="sprf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/sp2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Ensure all students have the basics they need.</span>
+            <h2>
+              Foster Academic Achievement   <br />
+              with the Right Tools
+            </h2>
+            <a href="sprf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/sp3.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Ease financial burden with free school resources.</span>
+            <h2>
+              Promote a Better Learning   <br />
+              Outcomes with Supplies
+            </h2>
+            <a href="sprf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/school_supplies_details_swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

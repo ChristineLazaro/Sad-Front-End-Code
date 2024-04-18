@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/education_details_swiper.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/education_details.css" />
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/edu1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Be part of Our Education Programs.</span>
+            <h2>
+              Inspire Curiosity through <br />
+              Engaging Programs
+            </h2>
+            <a href="erf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/edu2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Teach for tomorrow. Inspire today.</span>
+            <h2>
+              Educate and Inspire    <br />
+              Students For Change
+            </h2>
+            <a href="erf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/edu3.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Teach, inspire, and prepare for success.</span>
+            <h2>
+              Inspire Action through   <br />
+              Meaningful Education
+            </h2>
+            <a href="erf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/educatio_details_swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

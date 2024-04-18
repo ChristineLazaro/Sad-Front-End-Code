@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/program_details_swiper.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/program_details.css" />
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/ps.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Be part of Our Project iSKolar.</span>
+            <h2>
+              Building Bridges to a <br />
+              Brighter Future
+            </h2>
+            <a href="psrf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/ps2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Dream bigger reach your highest potential.</span>
+            <h2>
+              Transforming Dreams into   <br />
+              Reality with Knowledge
+            </h2>
+            <a href="psrf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/ps3.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Envision more create your bright tomorrow.</span>
+            <h2>
+              Empowerment Starts here <br />
+              Thrive with Scholar
+            </h2>
+            <a href="psrf.html" class="button">Register Here!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/program_details_swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
