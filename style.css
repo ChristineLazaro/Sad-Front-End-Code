@@ -35,7 +35,7 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
-  white-space: nowrap; /* Add this line */
+  white-space: nowrap; 
  
 }
 
@@ -57,8 +57,8 @@ body {
 }
 
 .nav .nav-links a {
-  color: #fff; /* Adjust font color */
-  font-size: 15px; /* Adjust font size */
+  color: #fff; 
+  font-size: 15px; 
   text-decoration: none; /* Remove underline */
   transition: all 0.2s linear;
 }
@@ -130,8 +130,8 @@ body {
 }
 
 .nav .logoContainer .navTitle {
-  font-size: 24px; /* Adjust font size */
-  color: #fff; /* Adjust font color */
+  font-size: 24px; 
+  color: #fff; 
 }
 
 /* responsive */
@@ -215,6 +215,7 @@ body {
 }
 
 /* Homepage styling */
+
 .homepage {
   background-image: url('Wpage.png'); /* Add the path to your background image */
   background-size: cover; /* Cover the entire background */
@@ -226,6 +227,7 @@ body {
   height: 100vh;
 
 }
+
 
 /* Styles for text inside the homepage */
 .homepage .content {
@@ -280,8 +282,10 @@ body {
   padding: 100px 0 0;
 }
 
+
 .programs h2 {
   font-size: 2rem;
+
 }
 
 .programs p {
@@ -316,6 +320,7 @@ body {
   object-fit: cover;
 }
 
+
 .programs p {
   color: #fff; /* Set font color to white */
 }
@@ -333,6 +338,10 @@ body {
   transition: transform 0.50s ease; /* Add transition for smooth animation */
 }
 
+
+
+
+
 /* Modify the CSS for card text */
 .card h3 {
   color: #fff; /* Set text color to white */
@@ -346,13 +355,14 @@ body {
   font-weight: normal; /* Set normal font weight */
   transition: color 0.3s ease; /* Add transition for smooth color change */
   text-decoration: none; /* Remove underline */
-}
+} 
 
 .card:hover h3,
 .card:hover p {
   font-weight: bold; /* Set font weight to bold on hover */
   color: #fff; /* Set text color to white on hover */
 }
+
 
 
 

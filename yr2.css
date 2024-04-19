@@ -1,29 +1,62 @@
-/* CSS code for styles.css */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.slider {
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Hide any overflow */
+    position: relative;
 }
 
-.section {
-    margin-bottom: 40px;
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fit the images to cover the full area */
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start images offscreen to the right */
+    opacity: 0; /* Initially hidden */
+    animation: slideIn 35s infinite; /* Use CSS animation */
 }
 
-.image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
+.slide:nth-of-type(1) {
+    animation-delay: 0s; /* Start with the first image */
 }
 
-.text {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: justify;
+.slide:nth-of-type(2) {
+    animation-delay: 7s; /* Delay the second image by 7 seconds */
+}
+
+.slide:nth-of-type(3) {
+    animation-delay: 14s; /* Delay the third image by 14 seconds */
+}
+
+.slide:nth-of-type(4) {
+    animation-delay: 21s; /* Delay the fourth image by 21 seconds */
+}
+
+.slide:nth-of-type(5) {
+    animation-delay: 28s; /* Delay the fifth image by 28 seconds */
+}
+
+@keyframes slideIn {
+    0%, 10% {
+        left: 100%; /* Start offscreen right */
+        opacity: 0; /* Hidden */
+    }
+    10%, 30% {
+        left: 0%; /* Slide in to the left */
+        opacity: 1; /* Fully visible */
+    }
+    30%, 60% {
+        left: 0%; /* Stay in the center */
+        opacity: 1; /* Stay fully visible */
+    }
+    60%, 80% {
+        left: -100%; /* Slide out to the left */
+        opacity: 0; /* Hidden */
+    }
 }

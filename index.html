@@ -56,15 +56,36 @@
   <!-- Content for homepage -->
   <section class="homepage" id="home">
     <div class="content">
-      <div class="text">
-        <h1>Welcome to SK Bolacan Official Digital Platform!</h1>
-        <p>Explore our digital oasis, redefining convenience and innovation online.<br>  Discover a new way forward.</p>
-      </div>
-      <a href="#programs">Our Programs</a>
+        <div class="text">
+            <h1>Welcome to SK Bolacan Official Digital Platform!</h1>
+            <p>Explore our digital oasis, redefining convenience and innovation online.<br>Discover a new way forward.</p>
+        </div>
+        <a href="#programs">Our Programs</a>
     </div>
-   
-  </section>
-  
+</section>
+
+<!-- JavaScript code -->
+<script>
+    const images = [
+        'h1.png', // Path to the first image
+        'h2.png', // Path to the second image
+        'Wpage.png'  // Path to the third image
+    ];
+
+    const homepage = document.querySelector('.homepage');
+    let currentIndex = 0;
+
+    // Function to change background image
+    function changeBackground() {
+        homepage.style.backgroundImage = `url(${images[currentIndex]})`;
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    // Change the background image every 5 seconds
+    setInterval(changeBackground, 5000);
+</script>
+</body>
+</html>
 
 <!-- Programs Content -->
 <section class="programs" id="programs">
@@ -151,7 +172,7 @@
               <div class="card-content">
                 <h2 class="name">SK Paola Caryl Ponon</h2>
                 <p class="description">The SK Chairman, a proactive young leader focused on organizing community programs and empowering youth in meaningful ways.</p>
-                <button class="button b">View More</button>
+                <a href="/your-detail-page-url" class="button b">View More</a>
             </div>
         </div>
 
@@ -239,7 +260,7 @@
         <div class="image-content">
             <span class="overlay"></span>
             <div class="card-image">
-                <img src="Sk/manuel.png" alt="" class="card-img">
+                <img src="Sk/man.png" alt="" class="card-img">
             </div>
         </div>
         <div class="card-content">
@@ -266,7 +287,7 @@
       <div class="image-content">
           <span class="overlay"></span>
           <div class="card-image">
-              <img src="Sk/che.jpg" alt="" class="card-img">
+              <img src="Sk/daisy.jpg" alt="" class="card-img">
           </div>
       </div>
       <div class="card-content">
