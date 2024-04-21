@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 200px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.left-column {
+    background-color: #f0f0f0;
+}
+
+.right-column {
+    background-color: #eaeaea;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: calc(33.333% - 20px); /* 33.333% width with margin between items */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Adjusting size of image and text in the left column */
+.left-column .item {
+    width: 150%; /* Make card full width in left column */
+}
+
+.left-column .item img {
+    max-width: 150%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+
+.left-column .item-text {
+    font-size: 50px;
+}
