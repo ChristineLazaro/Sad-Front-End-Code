@@ -120,3 +120,18 @@ body {
     row-gap: 15px;
   }
 }
+
+/* Back button */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}

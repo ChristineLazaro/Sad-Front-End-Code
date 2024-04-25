@@ -147,3 +147,18 @@ body {
     color: #333; /* Text color */
     margin-bottom: 5px; /* Add space below the label */
   }
+
+  /* Back button */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
